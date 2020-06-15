@@ -1,5 +1,5 @@
 <footer>
-      <small>@ 2019 ALL RIGHT RESERVED</small>
+      <small>&copy; Shinohara. ALL RIGHTS RESERVED.</small>
 </footer>
 
   </div>

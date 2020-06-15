@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <header>
-      <h1>About Dog</h1>
+      
       <nav class="menu">
         <?php wp_nav_menu( array(
             'theme_location'=>'mainmenu', 

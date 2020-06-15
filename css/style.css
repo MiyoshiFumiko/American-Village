@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+.container {
+  width: 1152px;
+  margin: 0 auto;
+}
+
+body {
+  color: #707070;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+/* .header-right{
+  display: flex;
+  font-size: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.header-right li:nth-child(2) {
+  margin: 0 27px;
+} */
+
+.top-image {
+  width: 100%;
+  height: 440px;
+}
+
+.sub-title {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 35px;
+}
+
+.article {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.article-img {
+  width: 100%;
+  height: 140px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-content {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  text-align: right;
+
+}
+
+.read-more a {
+  color: aqua;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: ;
+}
+
+@media screen and (max-width:960px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header-right{
+        display: none;
+    }
+
+    .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.cotact-title{
+  font-size: 25px;
+  margin-top: 35px;
+  margin-left: 15px;
+  margin-bottom: 35px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 480px;
+}
+
+form :nth-child(3){
+  height: 200px;
+}
+
+.contact-text{
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  font-size: 20px;
+}
+
+button{
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  background-color: gray;
+  color: rgb(254, 252, 252);
+  border-radius: 10px;
+}
+
+footer{
+  height: 40px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+small{
+  color: white;
+}
+
+
+
+@media screen and (max-width:600px){
+  .cotact-main{
+      width: 100%;
+  }
+
+  button{
+    width: 100%;
+  }
+}
+
+.main-content{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.main-title{
+  font-size: 30px;
+  color: rgb(201, 191, 1);
+}
+
+.main-box{
+  min-height: 400px;
+}
+
+#main-nav {
+  display: flex;
+}
+
+#main-nav li a{
+  margin-right: 30px;
+  /* margin-top: 50px; */
+  font-size: 15px;
+  text-decoration: none;
+  color: #707070;
+}
