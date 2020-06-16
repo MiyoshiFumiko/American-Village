@@ -24,7 +24,9 @@
                 <img  class="article-img" src="<?php echo get_template_directory_uri(); ?>/img/dog.jpg" alt="">
                <?php endif; ?>
               </a>
-               <p><?php the_excerpt(); ?></p>
+               <p><?php echo get_the_date('y/m/d'); ?></p>
+               <p><?php the_title(); ?></p>
+               <!-- <p><?php the_excerpt(); ?></p> -->
                <p class="read-more"> <a href="<?php the_permalink(); ?>">Read More</a></p>
              
            </li>
