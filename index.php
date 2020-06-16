@@ -8,7 +8,7 @@
     <?php endif; ?>
     </div>
     
-    <p>進化し続ける「街」アメリカンビレッジマガジン</p>
+    <p class="header-p">進化し続ける「街」アメリカンビレッジマガジン</p>
 
     <section>
     <?php if (have_posts ()): ?>
@@ -16,20 +16,24 @@
 
       <ul class="articles">
         <?php while(have_posts()): the_post(); ?>
-           <li class="article">
-             <a href="<?php the_permalink(); ?>">
+          <li class="article">
+            <a href="<?php the_permalink(); ?>">
                <?php if (has_post_thumbnail()): ?>
                 <?php the_post_thumbnail('thumbnail'); ?>
                <?php else: ?>
                 <img  class="article-img" src="<?php echo get_template_directory_uri(); ?>/img/dog.jpg" alt="">
                <?php endif; ?>
-              </a>
-               <p><?php echo get_the_date('y/m/d'); ?></p>
-               <p><?php the_title(); ?></p>
-               <!-- <p><?php the_excerpt(); ?></p> -->
-               <p class="read-more"> <a href="<?php the_permalink(); ?>">Read More</a></p>
+            </a>
+               
+            <p class="date"><?php echo get_the_date('y/m/d'); ?></p>
+            <p class="title"><?php the_title(); ?></p>
+               
+            <div class="read-more-div">
+              <p class="read-more"> <a href="<?php the_permalink(); ?>">Read More</a></p>
+            </div>
              
-           </li>
+            
+          </li>
         <?php endwhile; ?>
       
     <?php else: ?>
