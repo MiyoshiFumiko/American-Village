@@ -81,7 +81,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 55px;
-  padding-bottom: 55px;
+  /* padding-bottom: 55px; */
   padding-left: 20px;
   justify-content: flex-end;
 }
@@ -115,7 +115,7 @@ h1 {
 }
 
 .article {
-  width: 300px;
+  width: 320px;
   margin-bottom: 10px;
 }
 
@@ -127,6 +127,7 @@ h1 {
 .title, .date {
   /* line-height: 40px; */
   margin-top: 15px;
+  margin-left: 15px;
 }
 
 .articles {
@@ -146,6 +147,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+.article:hover {
+  box-shadow: 0 0 8px gray;
+}
+
 /* .read-more {
   text-align: right;
   /* margin-top: 80px; */
@@ -163,6 +168,7 @@ h1 {
   color: #707070;
   font-size: 12px;
   text-decoration: none;
+  margin-right: 15px;
   /* border-bottom: 1px solid;
   padding-bottom: 10px;
 
