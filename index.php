@@ -7,25 +7,34 @@
         <img src="<?php echo get_template_directory_uri(); ?>/img/dog.jpg" alt="犬" class="top-image">
     <?php endif; ?>
     </div>
+    
+    <p class="header-p">進化し続ける「街」アメリカンビレッジマガジン</p>
 
     <section>
     <?php if (have_posts ()): ?>
-      <h2 class="sub-title">Latest</h2>
+      <h2 class="sub-title">Latest Articles</h2>
 
       <ul class="articles">
         <?php while(have_posts()): the_post(); ?>
-           <li class="article">
-             <a href="<?php the_permalink(); ?>">
+          <li class="article">
+            <a href="<?php the_permalink(); ?>">
                <?php if (has_post_thumbnail()): ?>
                 <?php the_post_thumbnail('thumbnail'); ?>
                <?php else: ?>
                 <img  class="article-img" src="<?php echo get_template_directory_uri(); ?>/img/dog.jpg" alt="">
                <?php endif; ?>
-              </a>
-               <p><?php the_excerpt(); ?></p>
-               <p class="read-more"> <a href="<?php the_permalink(); ?>">Read More</a></p>
+            </a>
+               
+            <p class="date"><?php echo get_the_date('20y/m/d'); ?></p>
+            <p class="title"><?php the_title(); ?></p>
+               
+            <div class="read-more-div">
+              <p class="read-more"> <a href="<?php the_permalink(); ?>">READ MORE</a></p>
+              
+            </div>
              
-           </li>
+            
+          </li>
         <?php endwhile; ?>
       
     <?php else: ?>
@@ -35,20 +44,6 @@
       </ul>
     </section>
 
-    <section>
-
-     <h2 class="cotact-title">Contact</h2>
-
-     <form action="" class="cotact-main">
-
-      <input type="text" placeholder="お名前" class="contact-text">
-      <input type="text" placeholder="メールアドレス" class="contact-text">
-      <textarea name="t_name1" placeholder="お問い合わせ内容" class="contact-text"></textarea>
-
-       <button>送信</button>
-
-     </form>
-
-    </section>
+    
 
 <?php get_footer(); ?>
