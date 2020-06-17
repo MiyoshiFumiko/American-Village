@@ -14,11 +14,16 @@
     <header>
       
       <nav class="menu">
-        <?php wp_nav_menu( array(
+        <p>Menu01</p>
+        <p>Menu02</p>
+        <p>Menu03</p>
+        <p>Menu04</p>
+
+        <!-- <?php wp_nav_menu( array(
             'theme_location'=>'mainmenu', 
             'container'     =>'', 
             'menu_class'    =>'',
             'items_wrap'    =>'<ul id="main-nav">%3$s</ul>'));
-        ?>
+        ?> -->
       </nav>
     </header>
