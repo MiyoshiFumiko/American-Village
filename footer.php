@@ -1,5 +1,5 @@
 <footer>
-      <small>&copy; Shinohara. ALL RIGHTS RESERVED.</small>
+      <small>Copyright &copy; Shinohara. ALL RIGHTS RESERVED.</small>
 </footer>
 
   </div>

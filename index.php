@@ -25,11 +25,12 @@
                <?php endif; ?>
             </a>
                
-            <p class="date"><?php echo get_the_date('y/m/d'); ?></p>
+            <p class="date"><?php echo get_the_date('20y/m/d'); ?></p>
             <p class="title"><?php the_title(); ?></p>
                
             <div class="read-more-div">
-              <p class="read-more"> <a href="<?php the_permalink(); ?>">Read More</a></p>
+              <p class="read-more"> <a href="<?php the_permalink(); ?>">READ MORE</a></p>
+              
             </div>
              
             
