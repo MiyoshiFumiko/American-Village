@@ -14,20 +14,13 @@
     <header>
       
       <nav class="menu">
-<<<<<<< HEAD
-=======
         
->>>>>>> master
 
         <?php wp_nav_menu( array(
             'theme_location'=>'mainmenu', 
             'container'     =>'', 
             'menu_class'    =>'',
             'items_wrap'    =>'<ul id="main-nav">%3$s</ul>'));
-<<<<<<< HEAD
-        ?>
-=======
         ?> 
->>>>>>> master
       </nav>
     </header>
