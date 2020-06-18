@@ -1,8 +1,10 @@
 @charset "UTF-8";
+
 .container {
   width: 1152px;
   margin: 0 auto;
 }
+
 
 .top_photo{
     width: 100%;
@@ -14,23 +16,92 @@
 }
 
 .pc {
+    display: block !important;
+}
+
+.phpt_pc {
      display: block !important;
 }
+
 .sp { 
+    display: none !important; 
+}
+
+.phpt_sp { 
     display: none !important; 
 }
 
 .top_logo{
     position: absolute;
-    bottom: 330px;
+    bottom: 320px;
     left: 0px;
+    z-index: 100;
 }
 
 .top_right{
     position: absolute;
-    top: 236px;
+    top: 233px;
     right: 3px;
 }
+
+
+@media screen and (max-width:767px){
+
+    .container{
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .pc {
+        display: none !important;
+    }
+    
+    .phpt_pc { 
+        display: none !important; 
+    }
+
+    .sp { 
+        display: block !important; 
+    }
+
+    .phpt_sp {
+         display: block !important; 
+    }
+
+    .top_photo{
+        width: 100vw;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .photo_box{
+        position: relative;
+    }
+
+    .top_logo{
+        position: relative;
+        bottom: 15px;
+    }
+
+    .top_right{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+.container {
+  width: 1152px;
+  margin: 0 auto;
+}
+
+body {
+  color: #707070;
+}
+
 
 
 header {
@@ -144,9 +215,57 @@ h1 {
 .read-more a:hover {
   border-bottom: 1px solid;
   padding-bottom: 10px;
+}
 
+
+@media screen and (max-width:960px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+
+
+    .header-right{
+        display: none;
+    }
+
+    .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.cotact-title{
+  font-size: 25px;
+  margin-top: 35px;
+  margin-left: 15px;
+  margin-bottom: 35px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 480px;
+}
+
+form :nth-child(3){
+  height: 200px;
+}
+
+.contact-text{
+  height: 30px;
+  margin-bottom: 30px;
+}
  
-} 
+
 
 .read-more a:hover:before {
   display: none;
@@ -188,7 +307,7 @@ small{
 
 #main-nav li a{
   margin-right: 30px;
-  /* margin-top: 50px; */
+  margin-top: 50px;
   font-size: 15px;
   text-decoration: none;
   color: black;
@@ -202,7 +321,7 @@ small{
 
   .container{
       width: 100%;
-      /* margin: 0 auto; */
+      margin: 0 auto;
   }
 
   .menu{
