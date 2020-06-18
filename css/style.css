@@ -192,7 +192,11 @@ small{
   font-size: 15px;
   text-decoration: none;
   color: black;
-} 
+}
+
+#nav-input {
+  display: none;
+}
 
 @media screen and (max-width:767px){
 
@@ -257,5 +261,6 @@ small{
     align-items: center;
     margin: 0 auto;
   }
+  
   
 } 
