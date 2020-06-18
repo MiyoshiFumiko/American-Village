@@ -32,6 +32,8 @@ echo do_shortcode('[smartslider3 slider="4"]');
      -->
     <p class="header-p">進化し続ける「街」アメリカンビレッジマガジン</p>
 
+    <p class="header-p2">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
+
     <section>
     <?php if (have_posts ()): ?>
       <h2 class="sub-title">Latest Articles</h2>
