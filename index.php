@@ -1,6 +1,25 @@
 <?php get_header(); ?>
+<div class="top_photo">
+  <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="top_logo" >
+<div class="photo_box"> 
+<div class="phpt_pc">
+ <?php
+ echo do_shortcode('[smartslider3 slider="3"]');
+ ?>
+</div>
+<div class="phpt_sp">
+<?php
+echo do_shortcode('[smartslider3 slider="4"]');
+?>
+</div>
+  <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="" class="top_right pc" >
+  <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt="" class="top_right sp" >
+</div>
+</div>
 
+<!-- 
     <div class="top_photo">
+      <?php if ( get_header_image() ) : ?>
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="top_logo" >
         <div class="photo_box">
           <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="夜景" class="top-image pc" >
@@ -8,8 +27,9 @@
           <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="" class="top_right pc" >
           <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt="" class="top_right sp" >
         </div>
+      <?php endif; ?>
     </div>
-    
+     -->
     <p class="header-p">進化し続ける「街」アメリカンビレッジマガジン</p>
 
     <section>
