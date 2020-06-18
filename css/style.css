@@ -55,6 +55,10 @@
         display: none;
     }
 
+    /* .n2-ss-align n2-ss-align-visible{
+        width: 100vw;
+    } */
+
     .pc {
         display: none !important;
     }
@@ -72,13 +76,14 @@
     }
 
     .top_photo{
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
         margin-top: 20px;
     }
 
     .photo_box{
         position: relative;
+        width: 100%;
     }
 
     .top_logo{
