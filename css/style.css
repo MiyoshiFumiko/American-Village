@@ -217,9 +217,22 @@ h1 {
   border-radius: 2px;/*線の丸み*/
 }
 
-.read-more a:hover {
-  border-bottom: 1px solid;
-  padding-bottom: 10px;
+
+.read-more a:hover:before {
+  /* display: none; */
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 70px;/*線の長さ*/
+  height: 1px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: black;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+
+  transition: all 800ms 0s ease;
 }
 
 
@@ -271,11 +284,6 @@ form :nth-child(3){
 }
  
 
-
-.read-more a:hover:before {
-  display: none;
-}
-
 footer{
   margin-top: 80px;
   height: 120px;
@@ -316,7 +324,11 @@ small{
   font-size: 15px;
   text-decoration: none;
   color: black;
-} 
+}
+
+#nav-input {
+  display: none;
+}
 
 @media screen and (max-width:767px){
 
@@ -382,4 +394,5 @@ small{
     margin: 0 auto;
   }
   
+ 
 } 
