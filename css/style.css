@@ -144,6 +144,7 @@ h1 {
   /* margin: 0 auto; */
   display: flex;
   justify-content: center;
+  color: black;
 }
 
 .article {
@@ -384,6 +385,7 @@ small{
 
   .sub-title {
     margin-bottom: 10px;
+    color: black;
   }
 
   .articles{
